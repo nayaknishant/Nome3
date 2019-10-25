@@ -3,6 +3,10 @@ os: osx
 compiler:
   - gcc
   - clang
-
+addons:
+  apt:
+    packages:
+      - bison
+      - flex
 script:
  - cmake ..
