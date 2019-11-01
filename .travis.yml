@@ -4,6 +4,15 @@ compiler:
   - gcc
   - clang
 
+addons:
+  apt:
+    packages:
+      - qt
+      - open-mesh
+      - pugixml
+      - bison
+      - flex
+      - cmake
 
 script:
  - cmake ..
