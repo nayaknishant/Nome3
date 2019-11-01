@@ -16,4 +16,6 @@ addons:
 
 
 script:
+ - cd Nome3
+ - mkdir build && cd build
  - cmake ..
