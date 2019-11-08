@@ -1,23 +1,19 @@
 language: cpp
-matrix:
-  include:
-  - os: osx
-    osx_image: xcode10.3
-    addons:
-      homebrew:
-        packages:
-        - cmake
-        - qt
-        update: true
-    env:
-    - PATH="/usr/local/opt/qt/bin:$PATH"
-  - os: linux
-    dist: bionic
-    addons:
-      apt:
-        packages:
-        - qt5-default
-        - qt5-qmake
+os: osx
+compiler:
+  - gcc
+  - clang
+
+addons:
+  homebrew:
+    packages:
+      - qt
+      - open-mesh
+      - pugixml
+      - bison
+      - flex
+      - cmake
+      update: True
 
 script:
 - cmake . && make && make package
