@@ -17,4 +17,4 @@ addons:
 
 
 script:
- - cmake . && make
+  - cmake . && make
