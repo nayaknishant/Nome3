@@ -13,7 +13,6 @@ addons:
       - bison
       - flex
       - cmake
-      update: True
 
 
 script:
