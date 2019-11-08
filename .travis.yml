@@ -5,7 +5,7 @@ compiler:
   - clang
 
 addons:
-  homebrew:
+  apt:
     packages:
       - qt
       - open-mesh
@@ -13,7 +13,9 @@ addons:
       - bison
       - flex
       - cmake
-      update: True
+
 
 script:
-- cmake . && make && make package
+ - cd Nome3
+ - mkdir build && cd build
+ - cmake ..
