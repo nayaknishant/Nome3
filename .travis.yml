@@ -5,23 +5,16 @@ compiler:
   - clang
 
 addons:
-  apt:
+  homebrew:
     packages:
       - qt
-      update: True
       - open-mesh
-      update: True
       - pugixml
-      update: True
       - bison
-      update: True
       - flex
-      update: True
       - cmake
       update: True
 
 
 script:
- - cd Nome3
- - mkdir build && cd build
- - cmake ..
+ - cmake . && make
